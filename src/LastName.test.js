@@ -1,6 +1,6 @@
-import chai from 'chai'
-import chaiEnzyme from 'chai-enzyme'
-chai.use(chaiEnzyme())
+import chai from 'chai';
+import chaiEnzyme from 'chai-enzyme';
+chai.use(chaiEnzyme());
 
 import React from 'react';
 import { expect } from 'chai';
