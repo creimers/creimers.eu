@@ -11,7 +11,7 @@ var wrapper;
 
 describe('Test suite for Letter component', () => {
   beforeEach(() => {
-    wrapper = shallow(<Letter letter={'h'} />);
+    wrapper = shallow(<Letter letter={'h'} hidden={true} />);
   });
 
   it('Letter component should exist', () => {
@@ -21,6 +21,10 @@ describe('Test suite for Letter component', () => {
   it('Letter component should display a letter', () => {
     expect(wrapper.type()).to.equal('div');
     expect(wrapper.text()).to.equal('h');
+  });
+
+  it('Letter component should have "hidden" class', () => {
+    expect(wrapper).to.have.className('hidden');
   });
 
 });

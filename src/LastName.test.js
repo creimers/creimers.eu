@@ -22,5 +22,6 @@ describe('test suite for LastName component', () => {
   it('LastName component should have children', () => {
     expect(comp.props().name).to.equal(name);
     expect(comp.find('.hover-letter')).to.have.length(name.length);
-  })
+  });
+
 })

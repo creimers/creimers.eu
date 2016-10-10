@@ -1,0 +1,11 @@
+.letter{
+  height: auto;
+  width: auto;
+}
+
+.letter.hidden{
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
