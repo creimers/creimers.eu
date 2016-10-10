@@ -1,28 +1,3 @@
 body{
   font-size: 40px;
 }
-
-.first-name, .last-name, .letter, .click-letter, .hover-letter {
-  display: inline-block;
-}
-
-.first-name{
-  transition: width .75s;
-}
-
-.first-name.collapsed{
-  width: 20px;
-}
-
-.first-name.open{
-  width: 175px;
-}
-
-.click-letter{
-  color: red;
-  cursor: pointer;
-}
-
-.first-name.open > .letter{
-  transition: all 1s;
-}
