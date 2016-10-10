@@ -8,14 +8,14 @@ class HoverLetter extends Component {
     this.state = {
       color: '#000000'
     }
+    this.colors = ['#f00000', '#aeaeae', '#023a9c', '#009688'];
 
     this.changeColor = this.changeColor.bind(this);
     this.resetColor = this.resetColor.bind(this);
   }
 
   changeColor() {
-    let colors = ['#f00000', '#aeaeae', '#023a9c', '#009688'];
-    let color = colors[Math.floor(Math.random() * colors.length)];
+    let color = this.colors[Math.floor(Math.random() * this.colors.length)];
     this.setState({color: color});
   }
 
